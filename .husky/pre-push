@@ -2,6 +2,9 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "🔍 Running type check..."
-yarn run tsc
+yarn type-check
+
+echo "🔍 Running lint check..."
+yarn lint
 
 echo "✅ All checks passed!"
